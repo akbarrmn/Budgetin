@@ -48,17 +48,17 @@ const SplashImage = () => {
           <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
             {swiper === 0 ? "Simpan Uang," :
               swiper === 1 ? "Catat Uang,"
-                : "Capai Tujuan,"}
+                : "Set Goals,"}
           </Typography>
           <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
-            {swiper === 0 ? "Tanpa Berfikir Memikirkannya" : swiper === 1 ? "Tanpa Berfikir Memikirkannya" : "Untuk Masa Depan Yang Indah"}
+            {swiper === 0 ? "Tanpa Berfikir Memikirkannya" : swiper === 1 ? "Tanpa Berfikir Memikirkannya" : "Untuk Tujuan Masa Depan"}
           </Typography>
           <Typography variant='caption' sx={{ display: 'flex', justifyContent: 'center', px: {md:'5rem',sm:'5rem', xs:'4rem'}, textAlign: 'center', mt: 2 }}>
             {swiper === 0 ?
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "Mulai simpan uangmu dan bijak dalam menggunakannnya."
               : swiper === 1 ?
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+                "Catat keuangan berperan besar pada tujuan yang kamu"
+                : "Capai tujuan yang kamu inginkan, untuk masa depan yang indah"}
           </Typography>
         </Box>
         {swiper !== 2 ?
@@ -89,7 +89,7 @@ const SplashImage = () => {
                 bottom: { xs: 'unset', md: '5%' },
               }}
             >
-              Masuk
+              Ayo Mulai
             </Button>
           </Link>
         }

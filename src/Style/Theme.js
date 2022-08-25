@@ -32,6 +32,12 @@ export const Theme = createTheme({
         [`@media screen and (max-width: 700px)`]: {
           fontSize: "22px"
         },
+        [`@media screen and (max-width: 395px)`]: {
+          fontSize: "20px"
+        },
+        [`@media screen and (max-width: 365px)`]: {
+          fontSize: "18px"
+        },
       },
       subtitle1:{
         fontSize:'1rem',
