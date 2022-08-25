@@ -34,26 +34,26 @@ const SplashImage = () => {
           }}
         >
           <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image1} sx={{ width: '100%', height: '100%' }} />
+            <Box component={'img'} src={Image1} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
           <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image2} sx={{ width: '100%', height: '100%' }} />
+            <Box component={'img'} src={Image2} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
           <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image3} sx={{ width: '100%', height: '100%' }} />
+            <Box component={'img'} src={Image3} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
         </Swiper>
         <Box className="swiper-pagination" />
         <Box sx={{ mt: 5 }}>
-          <Typography variant='h5' sx={{ textAlign: 'center' }}>
+          <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
             {swiper === 0 ? "Simpan Uang," :
               swiper === 1 ? "Catat Uang,"
                 : "Capai Tujuan,"}
           </Typography>
-          <Typography variant='h5' sx={{ textAlign: 'center' }}>
+          <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
             {swiper === 0 ? "Tanpa Berfikir Memikirkannya" : swiper === 1 ? "Tanpa Berfikir Memikirkannya" : "Untuk Masa Depan Yang Indah"}
           </Typography>
-          <Typography variant='caption' sx={{ display: 'flex', justifyContent: 'center', px: '5rem', textAlign: 'center', mt: 2 }}>
+          <Typography variant='caption' sx={{ display: 'flex', justifyContent: 'center', px: {md:'5rem',sm:'5rem', xs:'4rem'}, textAlign: 'center', mt: 2 }}>
             {swiper === 0 ?
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
               : swiper === 1 ?

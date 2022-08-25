@@ -14,6 +14,42 @@ export const Theme = createTheme({
       fontFamily:"Poppins, sans-serif",
       button:{
         textTransform:'none'
+      },
+      h6:{
+        fontSize:'1.25rem'
+      },
+      h5:{
+        fontSize:'1.5rem',
+        [`@media screen and (min-width: 1440px)`]: {
+          fontSize: "2rem"
+        },
+        [`@media screen and (min-width: 1200px)`]: {
+          fontSize: "1.75rem"
+        },
+        [`@media screen and (min-width: 700px)`]: {
+          fontSize: "1.25rem"
+        },
+        [`@media screen and (max-width: 700px)`]: {
+          fontSize: "1rem"
+        },
+      },
+      subtitle1:{
+        fontSize:'1rem',
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: "1rem"
+        },
+        [`@media screen and (max-width: 700px)`]: {
+          fontSize: ".75rem"
+        },
+      },
+      caption:{
+        fontSize:'.75rem',
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: ".75rem"
+        },
+        [`@media screen and (max-width: 700px)`]: {
+          fontSize: ".6rem"
+        },
       }
     },
     palette:{
