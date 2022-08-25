@@ -30,7 +30,7 @@ export const Theme = createTheme({
           fontSize: "1.25rem"
         },
         [`@media screen and (max-width: 700px)`]: {
-          fontSize: "1rem"
+          fontSize: "22px"
         },
       },
       subtitle1:{

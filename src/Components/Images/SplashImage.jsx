@@ -12,6 +12,7 @@ import Image1 from "../../Assets/Image1.png"
 import Image2 from "../../Assets/Image2.png"
 import Image3 from "../../Assets/Image3.png"
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Arrow from "../../Assets/Icon/Arrow.svg"
 import { Link } from 'react-router-dom';
 
 const SplashImage = () => {
@@ -65,16 +66,15 @@ const SplashImage = () => {
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: { xs: 5, md: 'unset' }, mb: 5 }}>
             <Button className="next" color='secondary' variant='contained'
               sx={{
-                width: '71px',
-                height: '71px',
-                borderRadius: '50%',
+                width: '56px',
+                height: '56px',
+                minWidth:'unset',
                 position: { xs: 'unset', md: 'absolute' },
                 bottom: { xs: 'unset', md: '5%' },
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
+                textAlign:'center',
+                borderRadius:'50%'
               }}>
-              <ArrowForwardIosIcon />
+              <Box component={'img'} src={Arrow} sx={{ width:'25.34px', height:'25.34px' }}/>
             </Button>
           </Box>
           :
@@ -84,7 +84,7 @@ const SplashImage = () => {
               color="secondary"
               sx={{
                 width: '100%',
-                height: '40px',
+                height: '56px',
                 marginTop:'10%',
                 position: { xs: 'unset', md: 'absolute' },
                 bottom: { xs: 'unset', md: '5%' },
