@@ -11,7 +11,6 @@ import { Box, Button, Typography } from '@mui/material';
 import Image1 from "../../Assets/Image1.png"
 import Image2 from "../../Assets/Image2.png"
 import Image3 from "../../Assets/Image3.png"
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Arrow from "../../Assets/Icon/Arrow.svg"
 import { Link } from 'react-router-dom';
 
