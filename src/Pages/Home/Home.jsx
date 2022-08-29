@@ -1,17 +1,16 @@
 import React from 'react'
 import Container from '../../Components/Containers/Container'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
+import BottomBar from '../../Components/BottomBar/BottomBar'
 
 const Home = () => {
   return (
     <>
       <Container>
-        <Box sx={{ display: 'flex', justifyContent:'space-between' }}>
-          <Box>ID</Box>
-          <Typography>
-            Lewati
-          </Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', py: 5 }}>
+          Home
         </Box>
+        <BottomBar />
       </Container>
     </>
   )

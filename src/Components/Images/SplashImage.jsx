@@ -53,7 +53,7 @@ const SplashImage = () => {
           <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
             {swiper === 0 ? "Tanpa Berfikir Memikirkannya" : swiper === 1 ? "Tanpa Berfikir Memikirkannya" : "Untuk Tujuan Masa Depan"}
           </Typography>
-          <Typography variant='caption' sx={{ display: 'flex', justifyContent: 'center', px: {md:'5rem',sm:'5rem', xs:'4rem'}, textAlign: 'center', mt: 2 }}>
+          <Typography variant='caption' sx={{ display: 'flex', justifyContent: 'center', px: {md:'4rem',sm:'4rem', xs:'4rem'}, textAlign: 'center', mt: 2 }}>
             {swiper === 0 ?
               "Mulai simpan uangmu dan bijak dalam menggunakannnya."
               : swiper === 1 ?
