@@ -10,7 +10,7 @@ const Home = () => {
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', py: 5 }}>
           Home
         </Box>
-        <BottomBar />
+        <BottomBar pages={'Beranda'}/>
       </Container>
     </>
   )

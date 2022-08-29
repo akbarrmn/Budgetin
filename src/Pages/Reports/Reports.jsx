@@ -10,7 +10,7 @@ const Reports = () => {
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Box>Reports</Box>
         </Box>
-        <BottomBar />
+        <BottomBar pages={'Report'}/>
       </Container>
     </>
   )

@@ -10,7 +10,7 @@ const Transaction = () => {
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Box>Transaction</Box>
         </Box>
-        <BottomBar />
+        <BottomBar pages={'Transaksi'}/>
       </Container>
     </>
   )
