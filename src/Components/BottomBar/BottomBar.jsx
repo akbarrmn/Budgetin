@@ -27,7 +27,8 @@ const BottomBar = () => {
     return (
         <>
             <Box sx={{
-                width: 'inherit',
+                maxWidth:'inherit',
+                width:'inherit',
                 background:'white',
                 height: '114px',
                 boxShadow: '0px -6px 9px rgba(25, 28, 27, 0.05)',
@@ -36,7 +37,6 @@ const BottomBar = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                minWidth:'inherit',
                 gap: '16px',
             }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '16px', gap: '24px' }}>
