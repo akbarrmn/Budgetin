@@ -10,7 +10,7 @@ const Targets = () => {
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Box>Target</Box>
         </Box>
-        <BottomBar />
+        <BottomBar pages={'Targets'}/>
       </Container>
     </>
   )
