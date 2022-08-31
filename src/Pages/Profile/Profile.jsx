@@ -37,21 +37,21 @@ const Profile = () => {
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={account} sx={{ width: '24px', height: '24px' }} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Akun Saya</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Akun Saya</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={lock} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Atur Pin</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Atur Pin</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={restore} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Reset Data</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Reset Data</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
@@ -63,14 +63,14 @@ const Profile = () => {
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={language} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Ganti Bahasa</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Ganti Bahasa</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={notifications_active} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Pengaturan Notifikasi</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Pengaturan Notifikasi</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
@@ -82,35 +82,35 @@ const Profile = () => {
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={info} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Tentang Budgetin</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Tentang Budgetin</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={description} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Syarat & Ketentuan</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Syarat & Ketentuan</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={privacy_tip} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Kebijakan Privasi</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Kebijakan Privasi</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={mail} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Kritik & Saran</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Kritik & Saran</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={help} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Pusat Bantuan</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Pusat Bantuan</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
@@ -121,7 +121,7 @@ const Profile = () => {
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={logout} />
-                  <Typography variant='caption' sx={{ fontSize: '16px' }}>Keluar Akun</Typography>
+                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Keluar Akun</Typography>
                 </Box>
                 <Typography variant='caption' sx={{ fontSize: '14px', color:'#8C8D8D' }}>Versi 1.0</Typography>
               </Box>
