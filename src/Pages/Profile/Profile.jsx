@@ -5,17 +5,15 @@ import Container from '../../Components/Containers/Container'
 import foto from "../../Assets/image.jpg"
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 // Icon
-import account from "../../Assets/Icon/Profile/account_circle.svg"
-import info from "../../Assets/Icon/Profile/info.svg"
-import language from "../../Assets/Icon/Profile/language.svg"
-import lock from "../../Assets/Icon/Profile/lock.svg"
-import notifications_active from "../../Assets/Icon/Profile/notifications_active.svg"
-import restore from "../../Assets/Icon/Profile/restore.svg"
-import description from "../../Assets/Icon/Profile/description.svg"
-import logout from "../../Assets/Icon/Profile/logout.svg"
-import mail from "../../Assets/Icon/Profile/mail.svg"
-import privacy_tip from "../../Assets/Icon/Profile/privacy_tip.svg"
-import help from "../../Assets/Icon/Profile/help.svg"
+import account from "../../Assets/Icon/Profile/account_circle.png"
+import info from "../../Assets/Icon/Profile/info.png"
+import notifications_active from "../../Assets/Icon/Profile/notifications_active.png"
+import restore from "../../Assets/Icon/Profile/restore.png"
+import description from "../../Assets/Icon/Profile/description.png"
+import logout from "../../Assets/Icon/Profile/logout.png"
+import mail from "../../Assets/Icon/Profile/mail.png"
+import privacy_tip from "../../Assets/Icon/Profile/privacy_tip.png"
+import help from "../../Assets/Icon/Profile/help.png"
 
 const Profile = () => {
   return (
@@ -43,27 +41,8 @@ const Profile = () => {
               </Box>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
-                  <Box component={'img'} src={lock} />
-                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Atur Pin</Typography>
-                </Box>
-                <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
-              </Box>
-              <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
                   <Box component={'img'} src={restore} />
                   <Typography variant='h6' sx={{ fontSize: '16px' }}>Reset Data</Typography>
-                </Box>
-                <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
-              </Box>
-            </Box>
-          </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <Typography variant='caption' sx={{ fontSize: '16px', color: '#8C8D8D' }}>Pilihan</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>
-                  <Box component={'img'} src={language} />
-                  <Typography variant='h6' sx={{ fontSize: '16px' }}>Ganti Bahasa</Typography>
                 </Box>
                 <ArrowForwardIosOutlinedIcon sx={{ width: '16px', height: '16px' }} />
               </Box>
@@ -116,7 +95,7 @@ const Profile = () => {
               </Box>
             </Box>
           </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px', height: '200px' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px', mb:'120px' }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <Box sx={{ display: 'flex', width: '100%', gap: '4px', justifyContent: 'space-between', p: '4px 0px', alignItems: 'center', cursor: 'pointer' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: '12px', alignItems: 'center' }}>

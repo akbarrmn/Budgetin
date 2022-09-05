@@ -27,10 +27,12 @@ const SplashImage = () => {
           }}
           onSlideChange={(e) => setSwiper(e.realIndex)}
           slidesPerView={1}
+          allowTouchMove={false}
           style={{ borderRadius: '10px' }}
+          preventInteractionOnTransition={true}
           navigation={{
-            prevEl: '.prev',
-            nextEl: '.next',
+            prevEl: '#prev',
+            nextEl: '#next',
           }}
         >
           <SwiperSlide style={{ width: '352px', height: '305px' }}>
@@ -63,7 +65,7 @@ const SplashImage = () => {
         </Box>
         {swiper !== 2 ?
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: { xs: 5, md: 'unset' }, mb: 5 }}>
-            <Button className="next" color='secondary' variant='contained'
+            <Button id='next' color='secondary' variant='contained'
               sx={{
                 width: '56px',
                 height: '56px',
@@ -77,7 +79,7 @@ const SplashImage = () => {
             </Button>
           </Box>
           :
-          <Link to="/home" style={{ textDecoration:'none' }}>
+          <Link to="/beranda" style={{ textDecoration:'none' }}>
             <Button
               variant="contained"
               color="secondary"

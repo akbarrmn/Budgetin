@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactApexChart from 'react-apexcharts';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const CircleChart = () => {
-
+    const xs = useMediaQuery('(max-width:400px)');
+    const xxs = useMediaQuery('(max-width:370px)');
     const chartOptions = {
         series: [40],
         options: {
@@ -86,7 +88,7 @@ const CircleChart = () => {
 
     return (
         <>
-            <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="radialBar" height={250} width={250} />
+            <ReactApexChart options={chartOptions.options} series={chartOptions.series} type="radialBar" height={xs?210:xxs?180:230} width={xs?210:xxs?180:230} />
         </>
     )
 }
