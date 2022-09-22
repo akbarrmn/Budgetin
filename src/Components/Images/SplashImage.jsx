@@ -69,10 +69,9 @@ const SplashImage = () => {
                 width: '56px',
                 height: '56px',
                 minWidth:'unset',
-                position: { xs: 'unset', md: 'absolute' },
-                bottom: { xs: 'unset', md: '5%' },
                 textAlign:'center',
-                borderRadius:'50%'
+                borderRadius:'50%',
+                marginTop:'10%',
               }}>
               <Box component={'img'} src={Arrow} sx={{ width:'25.34px', height:'25.34px' }}/>
             </Button>
@@ -86,8 +85,6 @@ const SplashImage = () => {
                 width: '80%',
                 height: '56px',
                 marginTop:'10%',
-                position: { xs: 'unset', md: 'absolute' },
-                bottom: { xs: 'unset', md: '5%' },
               }}
             >
               Ayo Mulai

@@ -1,3 +1,4 @@
+import { Box } from '@mui/material'
 import React from 'react'
 import Container from '../Components/Containers/Container'
 
@@ -5,7 +6,9 @@ const Login = () => {
     return (
         <>
             <Container>
-                Login
+                <Box>
+
+                </Box>
             </Container>
         </>
     )
