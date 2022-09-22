@@ -7,6 +7,7 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import foto from "../../Assets/image.jpg"
 import AddIcon from '@mui/icons-material/Add';
 import { useNavigate } from 'react-router-dom';
+import Balance from '../../Components/Balance/Balance';
 
 const Transaction = () => {
   const [clicked, setClicked] = React.useState(localStorage.getItem("transaction"))
@@ -33,6 +34,9 @@ const Transaction = () => {
   return (
     <>
       <Container>
+        <Box pb={'180px'}>
+          <Balance />
+        </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', gap: '24px', height: '24px', py: 3, width: '100%' }}>
           <Box onClick={() => setClicked('Pengeluaran')} sx={{ display: 'flex', cursor: 'pointer', flexDirection: 'column', alignItems: 'center', gap: '8px', position: 'relative', width: '165px', height: '40px' }}>
             <Typography sx={{ color: clicked === 'Pengeluaran' ? 'black' : '#B2B3B3' }}>Pengeluaran</Typography>
