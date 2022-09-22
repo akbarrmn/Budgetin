@@ -6,7 +6,7 @@ import SplashImage from '../../Components/Images/SplashImage'
 const Splash = () => {
   return (
     <Container>
-      <Box sx={{pt:{xs:'unset', md:5, lg:5} }}>
+      <Box>
         <SplashImage />
       </Box>
     </Container>

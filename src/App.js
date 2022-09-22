@@ -8,6 +8,11 @@ import Transaction from "./Pages/Transaction/Transaction"
 import Targets from './Pages/Targets/Targets';
 import Reports from './Pages/Reports/Reports';
 import Profile from './Pages/Profile/Profile';
+import DetailTargets from './Pages/Targets/DetailTargets';
+import AddTargets from './Pages/Targets/AddTargets';
+import AddOutcome from './Pages/Transaction/AddOutcome';
+import AddIncome from './Pages/Transaction/AddIncome';
+import Login from './Auth/Login'
 
 function App() {
   return (
@@ -16,9 +21,17 @@ function App() {
         <ThemeProvider theme={Theme}>
           <Routes>
             <Route path='/' element={<Splash/>}/>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Splash/>}/>
+            <Route path='/lupa-password' element={<Splash/>}/>
+            <Route path='/lupa-password/reset-password/:id' element={<Splash/>}/>
+            <Route path='/beranda' element={<Home/>}/>
             <Route path='/transaksi' element={<Transaction/>}/>
+            <Route path='/tambah-pengeluaran' element={<AddOutcome/>}/>
+            <Route path='/tambah-pemasukan' element={<AddIncome/>}/>
             <Route path='/tujuan' element={<Targets/>}/>
+            <Route path='/tujuan/1' element={<DetailTargets/>}/>
+            <Route path='/tambah-tujuan' element={<AddTargets/>}/>
             <Route path='/laporan' element={<Reports/>}/>
             <Route path='/profile' element={<Profile/>}/>
           </Routes>

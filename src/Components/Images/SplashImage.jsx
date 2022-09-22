@@ -8,10 +8,12 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Navigation, Pagination } from "swiper";
 import { Box, Button, Typography } from '@mui/material';
-import Image1 from "../../Assets/Image1.png"
-import Image2 from "../../Assets/Image2.png"
-import Image3 from "../../Assets/Image3.png"
+
 import Arrow from "../../Assets/Icon/Arrow.svg"
+
+import imagesOne from "../../Assets/Splash/duid.png"
+import imagesTwo from "../../Assets/Splash/lepi.png"
+import imagesThree from "../../Assets/Splash/sip.png"
 import { Link } from 'react-router-dom';
 
 const SplashImage = () => {
@@ -19,31 +21,30 @@ const SplashImage = () => {
 
   return (
     <>
-      <Box className='swiper-container' sx={{ position:'relative', height:'90vh', pt:5, mx:5 }}>
+      <Box className='swiper-container' sx={{ position:'relative', height:'90vh' }}>
         <Swiper
           modules={[Navigation, Pagination]}
-          pagination={{
-            el: '.swiper-pagination'
-          }}
+          pagination={true}
           onSlideChange={(e) => setSwiper(e.realIndex)}
           slidesPerView={1}
+          allowTouchMove={false}
           style={{ borderRadius: '10px' }}
+          preventInteractionOnTransition={true}
           navigation={{
-            prevEl: '.prev',
-            nextEl: '.next',
+            prevEl: '#prev',
+            nextEl: '#next',
           }}
         >
-          <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image1} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
+          <SwiperSlide style={{ width: '100%', height: '100%' }}>
+            <Box component={'img'} src={imagesOne} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
-          <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image2} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
+          <SwiperSlide style={{ width: '100%', height: '100%' }}>
+            <Box component={'img'} src={imagesTwo} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
-          <SwiperSlide style={{ width: '352px', height: '305px' }}>
-            <Box component={'img'} src={Image3} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
+          <SwiperSlide style={{ width: '100%', height: '100%' }}>
+            <Box component={'img'} src={imagesThree} sx={{ width: '100%', height: '100%', objectFit:'contain' }} />
           </SwiperSlide>
         </Swiper>
-        <Box className="swiper-pagination" />
         <Box sx={{ mt: 5 }}>
           <Typography variant='h5' sx={{ textAlign: 'center', fontWeight:700 }}>
             {swiper === 0 ? "Simpan Uang," :
@@ -63,7 +64,7 @@ const SplashImage = () => {
         </Box>
         {swiper !== 2 ?
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: { xs: 5, md: 'unset' }, mb: 5 }}>
-            <Button className="next" color='secondary' variant='contained'
+            <Button id='next' color='secondary' variant='contained'
               sx={{
                 width: '56px',
                 height: '56px',
@@ -77,12 +78,12 @@ const SplashImage = () => {
             </Button>
           </Box>
           :
-          <Link to="/home" style={{ textDecoration:'none' }}>
+          <Link to="/beranda" style={{ textDecoration:'none', display:'flex', justifyContent:'center' }}>
             <Button
               variant="contained"
               color="secondary"
               sx={{
-                width: '100%',
+                width: '80%',
                 height: '56px',
                 marginTop:'10%',
                 position: { xs: 'unset', md: 'absolute' },

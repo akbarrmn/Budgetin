@@ -49,13 +49,28 @@ export const Theme = createTheme({
           fontSize: ".75rem"
         },
       },
+      subtitle2:{
+        fontSize:'14px',
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: "14px"
+        },
+        // [`@media screen and (max-width: 700px)`]: {
+        //   fontSize: ".75rem"
+        // },
+        // [`@media screen and (max-width: 395px)`]: {
+        //   fontSize: "20px"
+        // },
+        // [`@media screen and (max-width: 365px)`]: {
+        //   fontSize: "18px"
+        // },
+      },
       caption:{
         fontSize:'.75rem',
         [`@media screen and (max-width: 1200px)`]: {
           fontSize: ".75rem"
         },
         [`@media screen and (max-width: 700px)`]: {
-          fontSize: ".6rem"
+          fontSize: "16px"
         },
       }
     },
