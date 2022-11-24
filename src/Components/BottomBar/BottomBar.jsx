@@ -37,7 +37,7 @@ const BottomBar = ({pages}) => {
                 justifyContent:'center',
                 alignItems: 'center',
             }}>
-                <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '16px', gap: {md:'24px',sm:'24px', xs:'24px', xxs:'12px'} }}>
+                <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: '16px', gap: {md:'24px',sm:'24px', xs:'19px', xxs:'12px'} }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', cursor: 'pointer' }} 
                         onClick={() => HandlePage('/beranda')}>
                         <Box component={'img'} src={pages === 'Beranda' ? BerandaContained : Beranda} sx={{ width: '24px', height: '24px !important' }} />

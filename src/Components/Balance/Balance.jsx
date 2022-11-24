@@ -5,6 +5,26 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import { Box, IconButton, Typography } from '@mui/material';
 const Balance = () => {
+    const [values, setValues] = React.useState({
+        balance: '',
+        showBalance: true,
+    })
+
+    const handleChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+    }
+
+    const handleClickShowBalance = () => {
+        setValues({
+            ...values,
+            showBalance: !values.showBalance,
+        })
+    }
+
+    const handleMouseDownBalance = (event) => {
+        event.preventDefault();
+    }
+
     return (
         <>
             <Box sx={{ position: 'relative' }}>
@@ -12,8 +32,8 @@ const Balance = () => {
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '4px', position: 'absolute', top: '15px', left: '16px' }}>
                     <Typography sx={{ fontSize: '12px', lineHeight: '16px', fontWeight: 500, color: '#FFFFFF' }}>Total Saldo</Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <Typography sx={{ fontSize: '22px', lineHeight: '28px', fontWeight: 700, color: '#FFFFFF' }}>Rp.500.000</Typography>
-                        <IconButton sx={{ padding: 0, zIndex: 100, width: '30px !important', height: '30px !important', color: 'unset' }}>
+                        <Typography sx={{ fontSize: '22px', lineHeight: '28px', fontWeight: 700, color: '#FFFFFF' }}>{values.showBalance ? `Rp.500.000` : '********'}</Typography>
+                        <IconButton onClick={handleClickShowBalance} sx={{ padding: 0, zIndex: 100, width: '30px !important', height: '30px !important', color: 'unset' }}>
                             <VisibilityOffOutlinedIcon sx={{ color: 'white' }} />
                         </IconButton>
                     </Box>
@@ -25,7 +45,7 @@ const Balance = () => {
                         borderRadius: '8px',
                         mt: '5rem',
                         height: '60px',
-                        width: '378px',
+                        width: '80%',
                         p: '16px 12px',
                         display: 'flex',
                         gap: '8px',
